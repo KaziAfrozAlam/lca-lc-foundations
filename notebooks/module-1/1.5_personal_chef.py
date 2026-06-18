@@ -28,7 +28,7 @@ Return recipe suggestions and eventually the recipe instructions to the user, if
 from langchain.agents import create_agent
 from langchain_groq import ChatGroq
 
-groq_model = ChatGroq(model="llama-3.1-8b-instant") 
+groq_model = ChatGroq(model="meta-llama/llama-4-scout-17b-16e-instruct") 
 agent = create_agent(
     model=groq_model,
     tools=[web_search],
